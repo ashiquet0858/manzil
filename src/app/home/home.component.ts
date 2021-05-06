@@ -45,7 +45,7 @@ open(index: number): void {
 ]
   console.log(this._albums);
   
-  this._lightbox.open(this._albums, index);
+  this._lightbox.open(this._albums);
 }
 
 close(): void {
