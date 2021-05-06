@@ -1,0 +1,81 @@
+* {
+    color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  color: #fff;
+	text-decoration: none;
+}
+
+/*Image Section */
+.nav {
+    padding: 10px;
+}
+.nav ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    padding: 5px 10px;
+}
+
+li a {
+    display: block;
+    font-size: 15px;
+		font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: .7;
+    transition: opacity;
+	transition-duration: 1s;
+}
+
+li a:hover {
+    opacity: 1;
+}
+
+
+.tide {
+  background: url('https://res.cloudinary.com/dnvtzrarj/image/upload/v1459386716/photo-1445205170230-053b83016050_d62pha.jpg');
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.tide h1{
+  color: #fff;
+  font-size: 100px;
+  margin: 0;
+  padding:200px 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .8;
+}
+
+
+.btn-sub {
+	background-color: none;
+	border: solid 2px white;
+	font-size: 25px;
+	font-weight: 100;
+	text-decoration: none;
+	text-transform: uppercase;
+	opacity: 1;
+	padding: 10px 25px;
+	transition: opacity;
+	transition-duration: 1s;
+}
+
+.btn-sub:hover {
+	opacity: .6;
+}
+@media only screen and (max-width: 600px) {
+    .tide h1{
+      
+        font-size: 60px !important;
+        
+      }
+}
