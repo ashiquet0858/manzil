@@ -25,27 +25,34 @@ export class HomeComponent implements OnInit {
       };
      
 
-      this._albums.push(album);
+      // this._albums.push(album);
     }
   }
 
   ngOnInit() {
     this._albums=[]; 
+    for(let s=1; s<=54; s++){
+      const myalbum={
+         src : this.asset + s + this.jpeg
+      }
+    
+      this._albums.push(myalbum)
+    }
   }
   counter(i: number) {
     return new Array(i);
 }
 open(index: number): void {
   // open lightbox
-  this._albums=[
-    {
-   src: this.asset + index + this.jpeg
+//   this._albums=[
+//     {
+//    src: this.asset + index + this.jpeg
 
-  }
-]
+//   }
+// ]
   console.log(this._albums);
   
-  this._lightbox.open(this._albums);
+  this._lightbox.open(this._albums,index);
 }
 
 close(): void {
