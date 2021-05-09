@@ -1,6 +1,8 @@
 
-   <div class="container-fluid">
    
+
+   <div class="section">
+  
        <div class="tide">
            <div class="nav">
        <!-- <ul>
@@ -16,22 +18,95 @@
            
    </div>
        
-                       <h1>M A N Z I L</h1>
-                       <a class="btn-sub" href="#">Purdhas</a><br><br>
+                       <h1>M A N Z I L</h1><br><br>
+                       <b class="btn-sub" >Purdhas</b><br><br>
                        <h3>Mananthavady, Kerala 670645</h3>
                        <h3>+91 7902792405</h3>
 
        </div>
    </div>
-<div class="row  m-4">
-    <div class="col-6 col-lg-4 p-3" *ngFor='let in of counter(54) ;let i = index'>
-      <div class="card" (click)="open(i)">
-        <img [src]="asset + (i+1)+jpeg" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Manzil </b></h4> 
-          <p>Pardhas</p> 
+
+  <div class="container my-4"  (click)="goto('phardha')">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../assets/phardha1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/phardha2.jpg" class="d-block w-100" alt="passion">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/phardha3.jpg" class="d-block w-100" alt="[assion]">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
-  
+  <div class="container my-4">
+    <div id="carouselchuridhar" class="carousel slide" data-ride="carousel" (click)="goto('churidhar')">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselchuridhar" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselchuridhar" data-slide-to="1"></li>
+        <li data-target="#carouselchuridhar" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../assets/10.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/11.jpeg" class="d-block w-100" alt="passion">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/15.jpeg" class="d-block w-100" alt="[assion]">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselchuridhar" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselchuridhar" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="container my-4">
+    <div id="carouselshall" class="carousel slide" data-ride="carousel" (click)="goto('shall')">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselshall" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselshall" data-slide-to="1"></li>
+        <li data-target="#carouselshall" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  >
+          <img src="../../assets/42.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/43.jpeg" class="d-block w-100" alt="passion">
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/44.jpeg" class="d-block w-100" alt="[assion]">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselshall" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselshall" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
