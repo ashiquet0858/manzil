@@ -9,7 +9,7 @@ import { ShallComponent } from './shall/shall.component';
 import { TopesComponent } from './topes/topes.component';
 
 const routes: Routes = [
-  {path : '' ,pathMatch : 'full', redirectTo : '/home' , },
+  // {path : '' ,pathMatch : 'full', redirectTo : '/home' , },
   // { path: '**', redirectTo: 'home'},
   {path:'home',component:HomeComponent},
   {path:'phardha',component:PhardhasComponent},

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Lightbox } from 'ngx-lightbox';
 import { SeriviceService } from '../serivice.service';
-
+declare var $: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -37,7 +37,9 @@ export class HomeComponent implements OnInit {
       const myalbum={
          src : this.asset + s + this.jpeg
       }
-    
+      $(document).ready(function() {
+        $('.carousel').carousel();
+     })
       this._albums.push(myalbum)
     }
     this.getFoods();
