@@ -5,7 +5,6 @@ import { LightboxModule } from 'ngx-lightbox';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material/app-material.module';
@@ -34,7 +33,6 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     LightboxModule,
-    GraphQLModule,
     HttpClientModule,
     BrowserAnimationsModule ,
     AppMaterialModule
