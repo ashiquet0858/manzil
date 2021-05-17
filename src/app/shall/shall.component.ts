@@ -24,7 +24,7 @@ export class ShallComponent implements OnInit {
          res => { 
            this.data = res;
            this.data.forEach(element => {
-            this._albums.push({src: this.url+element.Image.url,
+            this._albums.push({src: element.Image.url,
               caption:`Rs : `+element.prize + `/` +element.size,
               
              });

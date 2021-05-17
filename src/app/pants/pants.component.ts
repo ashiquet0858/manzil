@@ -25,7 +25,7 @@ export class PantsComponent implements OnInit {
          res => { 
            this.data = res;
            this.data.forEach(element => {
-            this._albums.push({src: this.url+element.image.url,
+            this._albums.push({src: element.image.url,
               caption:`Rs : `+element.prize + `/` +element.size,
               
              });

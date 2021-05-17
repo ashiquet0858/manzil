@@ -26,7 +26,7 @@ export class RunningComponent implements OnInit {
            this.data = res;
            this.data.forEach(element => {
             this._albums.push({
-              src: this.url+element.image.url,
+              src: element.image.url,
               caption:`Rs : `+element.prize + `/` +element.size,
               
              });

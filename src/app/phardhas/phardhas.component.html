@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-6 col-lg-4 p-4 ph"  *ngFor='let data of data ;let i = index'>
-      <img src="" [src]="url+data.Image.url" alt="Avatar" style="width:100%" (click)="open(i)"><br>
+      <img src="" [src]="data.Image.url" alt="Avatar" style="width:100%" (click)="open(i)"><br>
       <div class="pl-4">
       <b class="text-secondary ">{{data.name}}</b><br>
-      <p class="text-secondary line">{{data.prize}} &nbsp;&nbsp;&nbsp; <del class="tex-secondary">{{data.discount}}</del ><br>
+      <p class="text-secondary line">{{data.prize | currency: 'INR'}} &nbsp;&nbsp;&nbsp; <del class="tex-secondary">{{data.discount  | currency: 'INR'}}</del ><br>
         {{data.size}}</p>
     </div>
     </div>

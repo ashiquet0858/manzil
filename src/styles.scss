@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+.wa-chat-box-poweredby{
+    display: none;
+  }
+  .wa-chat-box-header{
+    min-height: 60px !important;
+    max-height: 60px !important;
+  }
+  .wa-chat-box-brand{
+    width: 40px !important; 
+    height: 40px !important;
+  }
+// html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+.ph{
+  p,b{
+  font-family: 'Mulish', sans-serif;
+}
+del{
+  color: grey !important;
+}
+}
+/*Image Section */
+.nav {
+    padding: 10px;
+}
+.nav ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    padding: 5px 10px;
+}
+
+li a {
+    display: block;
+    font-size: 15px;
+		font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: .7;
+    transition: opacity;
+	transition-duration: 1s;
+}
+
+li a:hover {
+    opacity: 1;
+}
+
+
+.tide {
+  background: url('https://res.cloudinary.com/dnvtzrarj/image/upload/v1459386716/photo-1445205170230-053b83016050_d62pha.jpg');
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.tide h1{
+  color: #fff;
+  font-size: 100px;
+  margin: 0;
+  padding:225px 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .8;
+}
+
+
+.btn-sub {
+	background-color: none;
+	border: solid 2px white;
+	font-size: 25px;
+	font-weight: 100;
+	text-decoration: none;
+	text-transform: uppercase;
+	opacity: 1;
+	padding: 10px 25px;
+	transition: opacity;
+	transition-duration: 1s;
+}
+
+.btn-sub:hover {
+	opacity: .6;
+}
+@media only screen and (max-width: 600px) {
+    .tide h1{
+      
+        font-size: 60px !important;
+        
+      }
+     
+}
+
