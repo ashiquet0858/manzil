@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+.toolbar{
+  background: #f0f4f7;
+  
+}
+a {
+  color: #fff !important;
+	text-decoration: none;
+}
+.top{
+  padding: 10px;
+  text-align: center;
+  background: #f0f4f7;
+}
+.txt{
+  color: #225775;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 25px;
+}
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  color: #225775;
+  padding: 0px 20px 0px 15px;
+  transition: width 0.4s ease-in-out;
+}
+::placeholder {
+  color: #225775;
+  opacity: 1; /* Firefox */
+}
+.autocomplete-container.mat-focused .mat-form-field-outline .mat-form-field-outline-start,
+.autocomplete-container.mat-focused .mat-form-field-outline .mat-form-field-outline-gap,
+.autocomplete-container.mat-focused .mat-form-field-outline .mat-form-field-outline-end
+{
+    border-bottom: none;
+    border-radius: 0;
+}
