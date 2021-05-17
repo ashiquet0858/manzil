@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  rootUrl:'https://manzilstrapi.herokuapp.com/'
+  rootUrl:'https://manzilbackend.herokuapp.com'
 };
